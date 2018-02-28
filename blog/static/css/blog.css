@@ -1,0 +1,30 @@
+h1 a {
+    color: #48fc29;
+    font-family: 'padmaa', sans-serif;
+}
+
+.page-header {
+    background-color: indianred;
+}
+
+body {
+    padding-left: 15px;
+}
+
+.top-menu {
+    color: yellow;
+}
+
+.comment {
+    margin: 20px 0px 20px 20px;
+}
+
+.date {
+    font-family: 'Mitra Mono', serif;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.content-container {
+    background-color: darkmagenta;
+}
