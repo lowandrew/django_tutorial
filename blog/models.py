@@ -16,6 +16,9 @@ class Post(models.Model):
         self.published_date = timezone.now()
         self.save()
 
+    def approved_comments(self):
+        return self.comments.filter(approved_comment=True)
+
     def __str__(self):
         return self.title
 
@@ -33,3 +36,9 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.text
+
+
+class Document(models.Model):
+    description = models.CharField(max_length=255, blank=True)
+    document = models.FileField(upload_to='documents/')
+    uploaded_at = models.DateTimeField(auto_now_add=True)

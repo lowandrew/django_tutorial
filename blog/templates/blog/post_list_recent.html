@@ -11,4 +11,6 @@
             <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.approved_comments.count }}</a>
         </div>
     {% endfor %}
+    <a href="{% url 'post_list' %}">See all posts</a>
+    <a href="{% url 'model_form_upload' %}">UPLOAD A FILE</a>
 {%  endblock %}
